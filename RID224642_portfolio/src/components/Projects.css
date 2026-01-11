@@ -1,0 +1,114 @@
+.projects {
+  padding: var(--spacing-8) var(--spacing-4);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.projects .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects .section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-6);
+  text-align: center;
+  color: var(--text-color);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: var(--spacing-6);
+  padding: 0 20px;
+}
+
+.project-card {
+  background-color: #0F1624;
+  border-radius: 50px 0px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-4);
+  border: none;
+  box-shadow: 0px 0px 12px #FFFFFF;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 0px 24px rgba(0, 191, 255, 0.4);
+}
+
+.project-image {
+  width: 100%;
+  height: 266px;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(0, 191, 255, 0.1));
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-4);
+  font-size: 3rem;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: var(--spacing-2);
+  color: var(--text-color);
+  line-height: 1;
+}
+
+.project-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: var(--spacing-4);
+  line-height: 42px;
+  flex: 1;
+}
+
+.project-link {
+  background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+  color: white;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  padding: 15px 40px;
+  border-radius: 83px;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.project-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(19, 173, 199, 0.3);
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects .section-title {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,71 @@
+.experience {
+  background: #0F1624;
+  padding: 80px 0;
+  color: white;
+}
+
+.experience-timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+/* Linha horizontal */
+.experience-timeline::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #ffffff;
+  z-index: 1;
+}
+
+/* Cada item */
+.experience-item {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Ano */
+.experience-year {
+  font-size: 14px;   /* pequeno, como no Figma */
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: white;
+}
+
+/* Bolinha */
+.experience-item::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 33px; /* fica sobre a linha */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+/* Conteúdo */
+.experience-content {
+  margin-top: 50px;
+}
+
+.experience-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.experience-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
