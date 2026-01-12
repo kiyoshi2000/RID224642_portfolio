@@ -1,5 +1,11 @@
 import { useState, useEffect } from "react";
 import "./Projects.css";
+import DroneImage from "../assets/Drone.jpg";
+import SignLanguageImage from "../assets/signlanguage.png";
+import GraphImage from "../assets/graph.png";
+import RagImage from "../assets/rag.png";
+import ReinforcementImage from "../assets/reiforcementlearing.png";
+import SpeechImage from "../assets/speeach.png";
 
 interface Project {
   id: string;
@@ -19,42 +25,42 @@ function Projects() {
         id: "1",
         title: "Semi-autonomous-drone-navigation",
         description: "Projeto de controle visual semi-autônomo para TurtleBot usando ROS2. Implementação de joystick control com detecção de linhas e nó ROS2 integrado.",
-        image: "🤖",
+        image: DroneImage,
         link: "https://github.com/kiyoshi2000/Semi-autonomous-drone-navigation",
       },
       {
         id: "2",
         title: "Poleproject",
         description: "App Flutter para reconhecimento de linguagem de sinais em tempo real. Treinado com Python, TensorFlow e Mediapipe, convertido para TensorFlow Lite para mobile.",
-        image: "📱",
+        image: SignLanguageImage,
         link: "https://github.com/kiyoshi2000/Poleproject",
       },
       {
         id: "3",
         title: "GraphMining",
         description: "Análise de estruturas de grafos através de medidas de centralidade, detecção de comunidades e embeddings de nós. Avaliações visuais e quantitativas com múltiplos datasets.",
-        image: "📊",
+        image: GraphImage,
         link: "https://github.com/kiyoshi2000/GraphMining",
       },
       {
         id: "4",
         title: "RAG---PUB",
         description: "Chatbot baseado em texto para responder perguntas em domínio aberto. Usa TF-IDF para recuperação de contexto e modelo CamemBERT para leitura e extração de respostas.",
-        image: "🤖",
+        image: RagImage,
         link: "https://github.com/kiyoshi2000/RAG---PUB",
       },
       {
         id: "5",
         title: "Reinforcement-learning",
         description: "Projeto abrangente de RL com 4 tarefas: implementação DQN customizada, controle contínuo com policy gradients, agent SAC com Stable-Baselines3.",
-        image: "🧠",
+        image: ReinforcementImage,
         link: "https://github.com/kiyoshi2000/Reinforcement-learning",
       },
       {
         id: "6",
         title: "SpeechRecognition",
         description: "Projeto end-to-end comparando arquiteturas Conformer e Whisper. Fine-tuning, inferência e avaliação (WER) com datasets em grande escala.",
-        image: "🎤",
+        image: SpeechImage,
         link: "https://github.com/kiyoshi2000/SpeechRecognition",
       },
     ];
@@ -71,7 +77,7 @@ function Projects() {
           {projects.map((project) => (
             <div key={project.id} className="project-card fade-in">
               <div className="project-image">
-                <span>{project.image}</span>
+                <img src={project.image} alt={project.title} />
               </div>
               <div className="project-content">
                 <h3 className="project-title">{project.title}</h3>

@@ -30,10 +30,10 @@ function Header({ isScrolled }: HeaderProps) {
         </nav>
 
         <div className="social-links">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="GitHub">
+          <a href="https://github.com/kiyoshi2000" target="_blank" rel="noopener noreferrer" title="GitHub">
             <img src={GitHubIcon} alt="GitHub" />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+          <a href="https://www.linkedin.com/in/kiyoshi-araki/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
             <img src={LinkedInIcon} alt="LinkedIn" />
           </a>
         </div>
