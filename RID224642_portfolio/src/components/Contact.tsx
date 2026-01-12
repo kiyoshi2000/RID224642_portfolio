@@ -11,18 +11,18 @@ function Contact() {
         <div className="contact-content">
           <div className="contact-info">
             <p className="contact-phone">
-              <strong>Meu contato:</strong> 12 9888888888
+              <strong>Telefone:</strong> +33 7 81 29 52 37
             </p>
             <p className="contact-email">
-              <strong>Email:</strong> xxx@xyz.com
+              <strong>Email:</strong> kiyoshi.araki@hotmail.com
             </p>
           </div>
 
           <div className="contact-social">
-            <a href="https://github.com" className="social-link" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <a href="https://github.com/kiyoshi2000" className="social-link" target="_blank" rel="noopener noreferrer" title="GitHub">
               <img src={GitHubIcon} alt="GitHub" />
             </a>
-            <a href="https://linkedin.com" className="social-link" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/kiyoshi-araki/" className="social-link" target="_blank" rel="noopener noreferrer" title="LinkedIn">
               <img src={LinkedInIcon} alt="LinkedIn" />
             </a>
           </div>

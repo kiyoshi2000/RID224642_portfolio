@@ -15,28 +15,28 @@ function Experience() {
     // Simulate loading experience data
     const allExperiences: Experience[] = [
       {
-        id: "2018",
-        year: "2018",
-        title: "Início da Jornada",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        id: "2020-2023",
+        year: "2020 - 2023",
+        title: "Bacharelado em Engenharia Mecatrônica",
+        description: "Universidade de São Paulo (USP) | GPA 8.6/10 (Top 10%). Formação multidisciplinar em robótica, visão computacional e inteligência artificial aplicada.",
       },
       {
-        id: "2019",
-        year: "2019",
-        title: "Primeiro Projeto",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        id: "2023",
+        year: "Jan - Set 2023",
+        title: "Consultor de Data Science & Analytics",
+        description: "Visagio | Rio de Janeiro. Construção de pipelines ETL, dashboards em Power BI/Tableau, algoritmos de segmentação. Processamento 20% mais rápido e aumento de receita com repricing direcionado.",
       },
       {
-        id: "2020",
-        year: "2020",
-        title: "Crescimento Profissional",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        id: "2023-2025",
+        year: "Set 2023 - Set 2025",
+        title: "Mestrado em Inteligência Artificial",
+        description: "CentraleSupélec | GPA 4.15/4.33. Especialização em IA generativa, deep learning e computação em nuvem. Projetos com Azure, LangChain, OpenAI e Mistral.",
       },
       {
-        id: "2021",
-        year: "2021",
-        title: "Consolidação",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        id: "2024-2025",
+        year: "Set 2024 - Set 2025",
+        title: "Data IA & Cloud Solutions Intern",
+        description: "Onepoint | Paris. Infraestrutura Azure com Terraform, agentes conversacionais com LangChain e OpenAI. Redução de 20% custos e adoção por 1200+ usuários.",
       },
     ];
 

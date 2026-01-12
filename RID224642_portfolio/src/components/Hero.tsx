@@ -13,10 +13,10 @@ function Hero() {
       <div className="hero-container">
         <div className="hero-content fade-in">
           <h1 className="hero-title">
-            Lorem ipsum dolor sit amet
+            Kiyoshi Araki
           </h1>
           <p className="hero-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Engenheiro de IA & Consultor de Dados | Especialista em Inteligência Artificial Generativa. Desenvolvedor com experiência em soluções em nuvem, deep learning e arquiteturas de IA.
           </p>
 
           <div className="hero-actions">

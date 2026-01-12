@@ -1,28 +1,31 @@
 .projects {
-  padding: var(--spacing-8) var(--spacing-4);
+  padding: var(--spacing-8) var(--spacing-lg);
   background-color: var(--background-color);
   color: var(--text-color);
+  width: 100%;
 }
 
 .projects .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
+  padding: 0 var(--spacing-lg);
 }
 
 .projects .section-title {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: var(--spacing-6);
-  text-align: center;
+  text-align: left;
   color: var(--text-color);
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 40px;
   margin-top: var(--spacing-6);
-  padding: 0 20px;
+  padding: 0;
+  width: 100%;
 }
 
 .project-card {

@@ -38,6 +38,38 @@
   gap: var(--spacing-xl);
 }
 
+.nav button {
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+  position: relative;
+  padding-bottom: 4px;
+  font-family: var(--font-family);
+}
+
+.nav button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--secondary-color);
+  transition: width var(--transition-fast);
+}
+
+.nav button:hover {
+  color: var(--secondary-color);
+}
+
+.nav button:hover::after {
+  width: 100%;
+}
+
 .nav-list {
   display: flex;
   list-style: none;

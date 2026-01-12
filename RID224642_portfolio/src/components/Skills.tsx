@@ -14,26 +14,29 @@ function Skills() {
   useEffect(() => {
     // Simulate data loading
     const allSkills: Skill[] = [
-      { name: "React", level: 95, category: "frontend" },
-      { name: "TypeScript", level: 90, category: "frontend" },
-      { name: "JavaScript", level: 95, category: "frontend" },
-      { name: "CSS/Sass", level: 90, category: "frontend" },
-      { name: "Vite", level: 85, category: "frontend" },
-      { name: "HTML5", level: 95, category: "frontend" },
-      { name: "Node.js", level: 85, category: "backend" },
-      { name: "Express", level: 80, category: "backend" },
-      { name: "MongoDB", level: 80, category: "backend" },
-      { name: "PostgreSQL", level: 85, category: "backend" },
-      { name: "Docker", level: 75, category: "devops" },
-      { name: "Git", level: 90, category: "tools" },
-      { name: "REST APIs", level: 90, category: "backend" },
-      { name: "GraphQL", level: 80, category: "backend" },
+      { name: "Python", level: 95, category: "backend" },
+      { name: "OpenAI API", level: 90, category: "ai" },
+      { name: "LangChain", level: 90, category: "ai" },
+      { name: "TensorFlow", level: 88, category: "ai" },
+      { name: "PyTorch", level: 85, category: "ai" },
+      { name: "Azure Cloud", level: 88, category: "devops" },
+      { name: "Terraform", level: 85, category: "devops" },
+      { name: "Docker", level: 85, category: "devops" },
+      { name: "Kubernetes", level: 80, category: "devops" },
+      { name: "CI/CD (GitHub Actions)", level: 85, category: "devops" },
+      { name: "SQL", level: 90, category: "backend" },
+      { name: "C/C++", level: 80, category: "backend" },
+      { name: "Hugging Face", level: 88, category: "ai" },
+      { name: "OpenCV", level: 85, category: "ai" },
+      { name: "Mistral AI", level: 85, category: "ai" },
+      { name: "SAS", level: 80, category: "tools" },
+      { name: "Git", level: 95, category: "tools" },
     ];
 
     setSkills(allSkills);
   }, []);
 
-  const categories = ["all", "frontend", "backend", "devops", "tools"];
+  const categories = ["all", "ai", "backend", "devops", "tools"];
 
   const filteredSkills =
     selectedCategory === "all"
@@ -43,9 +46,9 @@ function Skills() {
   const getCategoryLabel = (category: string): string => {
     const labels: Record<string, string> = {
       all: "Todas",
-      frontend: "Frontend",
-      backend: "Backend",
-      devops: "DevOps",
+      ai: "IA & Machine Learning",
+      backend: "Backend & Dados",
+      devops: "Cloud & DevOps",
       tools: "Ferramentas",
     };
     return labels[category] || category;

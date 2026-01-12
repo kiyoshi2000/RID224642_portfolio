@@ -79,9 +79,16 @@ html {
 
 .main-content {
   width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 var(--spacing-lg);
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.main-content > section {
+  width: 100%;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* Responsive */
